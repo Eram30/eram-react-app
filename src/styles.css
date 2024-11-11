@@ -1,0 +1,233 @@
+/* Reset some basic elements for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f9d5e5, #a8c7d8); /* Pastel Pink to Soft Blue Gradient */
+    color: #4a4a4a;
+    padding: 20px;
+  }
+  
+
+   
+  
+  /* Global container for centering the content */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Title styling */
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #6d5d7e;
+    margin-bottom: 20px;
+    animation: slideInFromTop 1s ease-out;
+  }
+  
+  /* Section Titles */
+  h2 {
+    font-size: 1.75rem;
+    color: #b9a7c6;
+    margin-bottom: 15px;
+    animation: slideInFromBottom 1s ease-out;
+  }
+  
+  /* Input and label styling */
+  label {
+    display: block;
+    font-size: 1.1rem;
+    color: #7f7c8a;
+    margin-bottom: 8px;
+  }
+  
+  input[type="number"],
+  input[type="date"],
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 2px solid #d1c8e1;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="number"]:focus,
+  input[type="date"]:focus,
+  select:focus {
+    border-color: #9e86c2;
+    outline: none;
+    box-shadow: 0 0 10px rgba(158, 134, 194, 0.5);
+  }
+  
+  /* Submit button styling */
+  button {
+    background-color: #7f7c8a;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #6d5d7e;
+    transform: scale(1.05);
+  }
+  
+  /* Expense List Styling */
+  .expense-list {
+    margin-top: 30px;
+  }
+  
+  .expense-list div {
+    background-color: #f4e1e1;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .expense-list div:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .expense-list div p {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  /* Category colors based on expense types */
+  .expense-food {
+    background-color: #c9e2d4; /* Pastel Green */
+  }
+  
+  .expense-entertainment {
+    background-color: #e3d0d5; /* Pastel Pink */
+  }
+  
+  .expense-transport {
+    background-color: #c4c9e2; /* Pastel Blue */
+  }
+  
+  .expense-miscellaneous {
+    background-color: #e1e0f0; /* Light Lavender */
+  }
+  
+  /* Budget Manager Styling */
+  .budget-manager {
+    margin-bottom: 30px;
+  }
+  
+  input[type="number"] {
+    width: calc(100% - 20px);
+    display: inline-block;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e2e2e2;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+  
+  .progress-bar div {
+    height: 100%;
+    border-radius: 5px;
+    animation: progressBarAnimation 2s ease-in-out forwards;
+  }
+  
+  /* Animation for progress bar */
+  @keyframes progressBarAnimation {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  /* Alert styles */
+  .alert {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f7c0c0;
+    border: 2px solid #f4a3a3;
+    border-radius: 5px;
+    color: #9e4040;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInAlert 1s forwards;
+  }
+  
+  /* Animation for the alert */
+  @keyframes fadeInAlert {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Styled Progress bar text */
+  .progress-text {
+    font-size: 1rem;
+    color: #7f7c8a;
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  /* Animations for fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Slide-in animations for elements */
+  @keyframes slideInFromTop {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
